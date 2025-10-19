@@ -1,10 +1,5 @@
-# puts "Hello, World"
-
-# Default is "World"
+# Default is World
+# Author: Jim Weirich (jim@somewhere.com)
 name = ARGV.first || "World"
 
 puts "Hello, #{name}!"
-
-"Test GPG key Sign"
-"Lab 16"
-"Test Sign now"

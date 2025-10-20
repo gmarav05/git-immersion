@@ -70,3 +70,5 @@ git revert HEAD - used to revert changes from commited.
 git reset --hard <tag_name> - used to remove changes from branches.
 
 git commit -amend -m "<message>" - used to amend any changes like typo, files to recent commit.
+
+This is the Hello World example from the git tutorial.

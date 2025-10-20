@@ -2,16 +2,18 @@
 
 This repository contains my learnings of **Git Immersion**,  a hands-on tutorial designed to deepen understanding of Git fundamentals. 
 
+
 You can learn more on [Git Immersion](https://gitimmersion.com).
 
-## Lab 1 - Setting Up and Exploring Git Basics
+
+# Lab 1 - Setting Up and Exploring Git Basics
 
 ### 👾 Project Setup
 Learned how to set up this project using a **Ruby compiler**, since Git Immersion runs as a Ruby-based tutorial.  
 
 ### Learnings
 
-- What is the use of `git status` command?
+- What is the use of **`git status`** command?
 
 - Learned that git works with changes, not files.
 
@@ -21,7 +23,7 @@ Learned how to set up this project using a **Ruby compiler**, since Git Immersio
 - Learned that we can also use separate staging in git for commiting different files at times.
 separating staging and committing, we have the ability to easily fine tune what goes into each commit.
 
-- Learned how to modify the `git log` output format using `git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short` command the output would look like this "`fa5c03c 2025-10-13 | Added a comment (HEAD -> main, origin/main) [Aravind]`".
+- Learned how to modify the **`git log`** output format using **`git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short`** command the output would look like this "`fa5c03c 2025-10-13 | Added a comment (HEAD -> main, origin/main) [Aravind]`".
 
 **Example:**
 ```bash
@@ -32,7 +34,7 @@ git log
 git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 
 ```
-## Lab 2 - Getting Old Versions
+# Lab 2 - Getting Old Versions
 
 ###  Rakefile Setup
 Learned how to set up Rakefile, since Git Immersion is a Ruby-based tutorial.  
@@ -71,4 +73,41 @@ git reset --hard <tag_name> - used to remove changes from branches.
 
 git commit -amend -m "<message>" - used to amend any changes like typo, files to recent commit.
 
-This is the Hello World example from the git tutorial.
+```
+
+# Lab 3 - Git Internals & Branches
+
+###  How Git works internally
+Learned how to check Git hidden files **`.git`** and how to create branches.  
+
+
+### Learnings
+
+- How to checkout **`.git`** files?
+
+- What is the use of **`ls -C .git`** command?
+
+- How to create new branches using **`git branch <branch_name>`** command?
+
+- How to switch branch using **`git checkout <branch_name>`** command?
+
+- What is branch merging?
+
+- How to merge branches and handle the merge conflicts using the **`git merge main`** command.
+
+
+**Example:**
+```bash
+.git - contains all hidden files such as objects, tags, refs etc of our file.
+
+ls -C .git - list all hidden files.
+
+git branch <branch_name> - used to create new branch.
+
+git branch - lists all branches.
+
+git checkout <branch_name> - used to switch branch.
+
+git merge <branch_name> - used to merge two branches.
+
+```
